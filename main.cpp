@@ -1,13 +1,24 @@
 #include <iostream>
+#include "ball.h"
+
+int ball::numOfBalls=0;
+
+//funnctions
+ball createNewBall();
+
+
 
 int main() {
-    std::cout << "Hello, World!\n";
-
-    std::string name;
-
-
-    std::cout<<"please enter your mums name";
-    std::cin>> name;
-    std::cout<<"im sorry but i hate your mum i think the name "<<name<<" is really dumb";
+    ball balls[10];
+    for(int i =0; i<10;i++){
+        balls[i]=createNewBall();
+    }
     return 0;
+}
+
+
+
+ball createNewBall(){
+    ball tempBall(0, 0, 0, 0, 0, 0, 1, 1);
+    return tempBall;
 }

@@ -3,4 +3,6 @@ project(C___practise)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(C___practise main.cpp)
+add_executable(C___practise main.cpp
+        ball.cpp
+        ball.h)
